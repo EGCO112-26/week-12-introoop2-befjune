@@ -69,7 +69,7 @@ int main(int argc, char* argv[]) {
 
   // Print all info for the yougest person
  
-  cout << "\n*** The Youngest Person ***" << endl;
+  cout << "\nYoungest Student"<< endl;
   for(i = 0; i < N; i++) {
         if(a[i].get_age() == min_age) {
           a[i].print_name(""); 
