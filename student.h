@@ -18,6 +18,9 @@ public:
     //2.get_age return ค่า age
     int get_age();
 
+    //display func (for assignment)
+    void display();
+
 };
 
 void student::set_name(string n){
@@ -33,11 +36,17 @@ void student::print_name(string n){
 }
 
 void student::set_age(int a){
-  if(a>80) a=80;
-  else if (a<18) a=18;
+  if(a>100) a=100;
+  else if (a<0) a=0;
   else age=a;
 }
 
 int student::get_age(){
+  //std::cout<<age<<endl;
   return age;
+}
+
+void student::display(){
+  std::cout<<"Name: "<<name<<endl;
+  cout<<"Age: "<<age<<endl;
 }
